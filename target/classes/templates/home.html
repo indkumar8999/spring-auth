@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome, <span th:text="${username}"></span>!</h1>
+
+    <!-- Link for users to view doctors -->
+    <a href="/doctors">View Doctors</a>
+
+    <div th:if="${!isAdmin}">
+        <!-- Show user-only link -->
+        <form id="apiForm" th:action="@{/alldoctors}" method="get">
+            <!-- Set the username as patient name-->
+            <input type="hidden" th:name="patientName" th:value="${username}" />
+        
+            <label for="eventDateTime">Enter Date for Appointment:</label>
+            <input type="date" id="eventDateTime" name="eventDateTime" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <form id="appointmentForm" th:action="@{/appointments}" method="get">
+            <!-- Set the username as patient name-->
+            <input type="hidden" th:name="userName" th:value="${username}" />
+            <button type="submit">Get My Appointments</button>
+        </form>
+    </div>
+
+    
+
+    <!-- Show admin-only link -->
+    <div th:if="${isAdmin}">
+
+        <form id="allappointmentForm" th:action="@{/allappointments}" method="get">
+            <!-- Set the username as patient name-->
+            <input type="hidden" th:name="userName" th:value="${username}" />
+            <button type="submit">Get All Appointments</button>
+        </form>
+
+        <!-- Link for admin to update doctors list -->
+        <a href="/admin/update-doctors">Update Doctors List</a>
+    </div>
+
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>

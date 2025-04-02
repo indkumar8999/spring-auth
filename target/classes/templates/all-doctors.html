@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Doctors</title>
+</head>
+<body>
+    <h2>All Registered Doctors</h2>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Available Slots on <span th:text="${eventDateTime}"></span></th>
+        </tr>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.email}"></td>
+            <td>
+                <form method="post" th:action="@{/doctor/{id}(id=${user.id})}">
+                    <input type="hidden" th:name="email" th:value="${user.email}" />
+                    <input type="hidden" th:name="patientName" th:value="${patientName}" />
+                    <input type="hidden" th:name="eventDateTime" th:value="${eventDateTime}" />
+                    
+                    <div th:each="slot : ${user.slots}">
+                        <input type="checkbox" th:name="selectedSlots" th:value="${slot.time}" />
+                        <label th:text="${slot.time}"></label>
+                    </div>
+
+
+                    <!-- <label for="eventDateTime">Select Date and Time:</label>
+                    <input type="date" th:id="eventDateTime" th:name="eventDateTime" required> -->
+
+                    <br><br>
+
+                    <button type="submit">Submit Slots</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/models/Appointment.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/controller/CustomErrorController.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/db/DbConnection.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/models/MyUser.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/controller/AdminController.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/config/SecurityConfig.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/controller/RegisterController.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/AuthMagicApplication.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/controller/DoctorController.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/service/CustomUserDetailsService.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/models/Slot.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/controller/HomeController.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/models/Doctor.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/controller/AppointmentController.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/controller/LoginController.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/controller/UserController.java
+/Users/dilipkumar.irala/Documents/java_code/spring-auth/src/main/java/com/myweb/authmagic/service/UserService.java

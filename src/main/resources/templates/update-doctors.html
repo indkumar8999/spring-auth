@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Update Doctors</title>
+</head>
+<body>
+    <h1>Update Doctors List</h1>
+
+    <!-- Form to add a new doctor -->
+    <form action="#" th:action="@{/admin/update-doctors}" th:object="${doctor}" method="post">
+        <label for="name">Doctor Name:</label>
+        <input type="text" id="name" name="name" th:field="*{name}" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" th:field="*{email}" required>
+        <br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" th:field="*{department}" required>
+        <br>
+
+        <button type="submit">Add Doctor</button>
+    </form>
+
+    <h2>Doctors List</h2>
+    <ul>
+        <li th:each="doc : ${doctors}">
+            <span th:text="${doc.name}"></span> - 
+            <span th:text="${doc.email}"></span> - 
+            <span th:text="${doc.department}"></span>
+        </li>
+    </ul>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>

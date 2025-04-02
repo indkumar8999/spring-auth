@@ -1,0 +1,17 @@
+com/myweb/authmagic/controller/CustomErrorController.class
+com/myweb/authmagic/model/MyUser.class
+com/myweb/authmagic/controller/DoctorController.class
+com/myweb/authmagic/controller/LoginController.class
+com/myweb/authmagic/controller/AdminController.class
+com/myweb/authmagic/models/Doctor.class
+com/myweb/authmagic/models/Slot.class
+com/myweb/authmagic/service/CustomUserDetailsService.class
+com/myweb/authmagic/controller/AppointmentController.class
+com/myweb/authmagic/db/DbConnection.class
+com/myweb/authmagic/models/Appointment.class
+com/myweb/authmagic/controller/HomeController.class
+com/myweb/authmagic/config/SecurityConfig.class
+com/myweb/authmagic/service/UserService.class
+com/myweb/authmagic/controller/UserController.class
+com/myweb/authmagic/AuthMagicApplication.class
+com/myweb/authmagic/controller/RegisterController.class
